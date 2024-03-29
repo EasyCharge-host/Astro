@@ -42,9 +42,9 @@ function About() {
           {" "}
           <h2 className="text-2xl md:text-3xl font-bold mb-4">Anteilscheine</h2>
           <ul className="list-disc text-base md:text-lg">
-            <li>Price: {stakeholder.price}€</li>
-            <li>Total: {stakeholder.total}</li>
-            <li>Taken: {stakeholder.taken}</li>
+            <li>Preis/Stk: {stakeholder.price}€</li>
+            <li>Insgesamt: {stakeholder.total}</li>
+            <li>Vergeben: {stakeholder.taken} Stück (max 2Stk pro Person)</li>
             <p className="text-center">
               <strong>
                 {((stakeholder.taken / stakeholder.total) * 100).toFixed(2)} %
