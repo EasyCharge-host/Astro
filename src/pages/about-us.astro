@@ -1,0 +1,9 @@
+---
+import '../components/App.css';
+import AppLayout from '../layouts/AppLayout.astro';
+import About from '../components/About.jsx';
+---
+
+<AppLayout title="Über uns">
+  <About client:only/>
+</AppLayout/>

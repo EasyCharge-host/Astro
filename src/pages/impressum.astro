@@ -1,0 +1,9 @@
+---
+import '../components/App.css';
+import AppLayout from '../layouts/AppLayout.astro';
+import Impressum from '../components/Impressum.jsx';
+---
+
+<AppLayout title="Impressum">
+  <Impressum client:only/>
+</AppLayout/>
