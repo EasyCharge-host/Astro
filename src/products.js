@@ -13,9 +13,9 @@ export const FOUNDERS = [
   {
     class: "a",
     id: 1,
-    name: "Schmiedjell Marcel",
-    image: "/3.jpg",
-    job: "Finance and IT",
+    name: "Radic Daniel",
+    image: "/5.jpg",
+    job: "Sales and Social Media",
   },
   {
     class: "b",
@@ -44,9 +44,9 @@ export const FOUNDERS = [
     class: "e",
 
     id: 5,
-    name: "Radic Daniel",
-    image: "/5.jpg",
-    job: "Sales and Social Media",
+    name: "Schmiedjell Marcel",
+    image: "/3.jpg",
+    job: "Finance and IT",
   },
 ];
 {
