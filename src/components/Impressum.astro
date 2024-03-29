@@ -1,11 +1,8 @@
-function Impressum() {
-  return (
-    <>
-    <div className="bg-white p-8 rounded-lg shadow-md max-w-screen-md mx-auto my-8">
-      <h2 className="text-3xl font-semibold mb-6 text-center">
-        Impressum der Junior Company EasyCharge
-      </h2>
-      <div className="text-left space-y-4">
+---
+import DivImpressum from "./DivImpressum.astro";
+---
+    <DivImpressum title="Impressum der Junior Company EasyCharge">
+      <div class="text-left space-y-4">
         <div>
           <strong>Adresse:</strong> Technikerstraße 1-5, 2340 Mödling
         </div>
@@ -16,7 +13,7 @@ function Impressum() {
           Telefon:{" "}
           <a
             href={`tel:+4369917131997`}
-            className="text-blue-600 hover:text-orange-300"
+            class="text-blue-600 hover:text-orange-300"
           >
             +43 699 1713 1997
           </a>
@@ -24,7 +21,7 @@ function Impressum() {
           E-Mail:{" "}
           <a
             href="mailto:office@easycharge-jc.com"
-            className="text-blue-600 hover:underline"
+            class="text-blue-600 hover:underline"
           >
             office@easycharge-jc.com
           </a>
@@ -79,13 +76,7 @@ function Impressum() {
         </p>
       </div>
     
-    </div>
-    <div className="bg-white p-8 rounded-lg shadow-md max-w-screen-md mx-auto my-8">
-      <h1 className="text-3xl">Referenz</h1>
+    </DivImpressum>
+    <DivImpressum title="Referenz">
       <span>[1] Dieses Foto dient nur zur Vorstellung des Produkts. Das Bild wurde mit einem CAD Programm gemacht und dient zur bessern Anschaung</span>
-    </div>
-    </>
-  );
-}
-
-export default Impressum;
+    </DivImpressum>
