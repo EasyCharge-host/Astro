@@ -1,5 +1,6 @@
 function Impressum() {
   return (
+    <>
     <div className="bg-white p-8 rounded-lg shadow-md max-w-screen-md mx-auto my-8">
       <h2 className="text-3xl font-semibold mb-6 text-center">
         Impressum der Junior Company EasyCharge
@@ -77,7 +78,13 @@ function Impressum() {
           uns gerne kontaktieren.
         </p>
       </div>
+    
     </div>
+    <div className="bg-white p-8 rounded-lg shadow-md max-w-screen-md mx-auto my-8">
+      <h1 className="text-3xl">Referenz</h1>
+      <span>[1] Dieses Foto dient nur zur Vorstellung des Produkts. Das Bild wurde mit einem CAD Programm gemacht und dient zur bessern Anschaung</span>
+    </div>
+    </>
   );
 }
 

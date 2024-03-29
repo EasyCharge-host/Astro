@@ -30,6 +30,7 @@ function Produkte(props) {
         src={productImg}
         alt={`Picture: ${productImg}`}
       />
+      <span className="justify-end flex">[1]</span>
 
       <div className="description text-center mt-4">
         <span className="text-lg md:text-xl font-semibold">{name}</span>
