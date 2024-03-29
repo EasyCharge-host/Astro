@@ -33,11 +33,11 @@ function ImageAboutUs({ data }) {
 
   return (
     <li
-      id={`${data.class}`}
-      className="text-center flex flex-col items-center "
+      id={data.class}
+      className="text-center flex flex-col items-center"
     >
       <img
-        className="rounded-md w-44 h-60"
+        className="rounded-md w-44 h-60 object-cover"
         src={data.image}
         alt={`image/${data.name}`}
       />
