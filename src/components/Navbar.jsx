@@ -1,4 +1,16 @@
-function Navbar() {
+function Navbar({}) {
+  const currentPath = window.location.pathname;
+  let active;
+  if (currentPath === "/") {
+    active = "home";
+  } else if (currentPath === "/produkt") {
+    active = "produkt";
+  } else if (currentPath === "/about-us") {
+    active = "about-us";
+  } else if (currentPath === "/impressum") {
+    active = "impressum";
+  }
+  //className="nav-link md:ml-4 mb-2 md:mb-0 hover:underline-offset-1 hover:underline"
   return (
     <>
       <nav className="flex flex-col md:flex-row items-center justify-between p-4 bg-gray-800 text-white">
@@ -14,25 +26,25 @@ function Navbar() {
         <div className="mt-4 md:mt-0 md:flex-grow md:flex md:items-center md:justify-center">
           <div className="flex flex-col md:flex-row md:items-center md:ml-2 md:gap-16 text-2xl">
             <a
-              className="nav-link md:ml-4 mb-2 md:mb-0 hover:underline-offset-1 hover:underline"
+              className={`nav-link ${active === "home" ? "text-sky-200" : ""} md:ml-4 mb-2 md:mb-0 hover:underline-offset-1 hover:underline`}
               href="/"
             >
               Startseite
             </a>
             <a
-              className="nav-link md:ml-4 mb-2 md:mb-0 hover:underline-offset-1 hover:underline"
+              className={`nav-link ${active === "produkt" ? "text-sky-200" : ""} md:ml-4 mb-2 md:mb-0 hover:underline-offset-1 hover:underline`}
               href="/produkt"
             >
               Produkt
             </a>
             <a
-              className="nav-link md:ml-4 mb-2 md:mb-0 hover:underline-offset-1 hover:underline"
+              className={`nav-link ${active === "about-us" ? "text-sky-200" : ""} md:ml-4 mb-2 md:mb-0 hover:underline-offset-1 hover:underline`}
               href="/about-us"
             >
               Über uns
             </a>
             <a
-              className="nav-link md:ml-4 mb-2 md:mb-0 hover:underline-offset-8 hover:underline"
+              className={`nav-link ${active === "impressum" ? "text-sky-200" : ""} md:ml-4 mb-2 md:mb-0 hover:underline-offset-1 hover:underline`}
               href="/impressum"
             >
               Impressum

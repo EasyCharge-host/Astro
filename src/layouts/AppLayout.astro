@@ -2,6 +2,7 @@
 const { title } = Astro.props;
 import Header from "../components/Header";
 import "../components/App.css"
+const currentPath = Astro.url.pathname;
 ---
 <html lang="en">
   <head>
@@ -11,7 +12,7 @@ import "../components/App.css"
     <title>{title}</title>
   </head>
   <header>
-    <Header client:load />
+    <Header client:only />
   </header>
   <body>
       <slot /> <!-- your content is injected here -->
