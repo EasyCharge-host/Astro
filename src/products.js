@@ -9,6 +9,18 @@ export const DATA = [
     // productPay: "https://buy.stripe.com/test_fZe4hE8CydEw8U06oq",
   },
 ];
+export const dataProdImg = [
+  {
+    id: 2,
+    name: productImg2,
+    productImg: "/productImg2.jpg",
+  },
+  {
+    id: 3,
+    name: productImg3,
+    productImg: "/productImg3.jpg",
+  },
+];
 export const FOUNDERS = [
   {
     class: "a",
