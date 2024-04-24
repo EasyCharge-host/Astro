@@ -3,11 +3,14 @@ function Navbar({}) {
   let active;
   if (currentPath === "/") {
     active = "home";
-  } else if (currentPath === "/produkt") {
+  }
+  if (currentPath === "/produkt") {
     active = "produkt";
-  } else if (currentPath === "/about-us") {
+  }
+  if (currentPath === "/about-us") {
     active = "about-us";
-  } else if (currentPath === "/impressum") {
+  }
+  if (currentPath === "/impressum") {
     active = "impressum";
   }
   //className="nav-link md:ml-4 mb-2 md:mb-0 hover:underline-offset-1 hover:underline"
