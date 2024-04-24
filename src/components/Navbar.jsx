@@ -1,17 +1,21 @@
+import { useState, useEffect } from "react";
 function Navbar({}) {
-  const currentPath = window.location.pathname;
-  let active;
+  let currentPath;
+  const [setActive, active] = useState("home");
+  useEffect(() => {
+    currentPath = window.location.pathname;
+  });
   if (currentPath === "/") {
-    active = "home";
+    setActive = "home";
   }
   if (currentPath === "/produkt/") {
-    active = "produkt";
+    setActive = "produkt";
   }
   if (currentPath === "/about-us/") {
-    active = "about-us";
+    setActive = "about-us";
   }
   if (currentPath === "/impressum/") {
-    active = "impressum";
+    setActive = "impressum";
   }
   //className="nav-link md:ml-4 mb-2 md:mb-0 hover:underline-offset-1 hover:underline"
   return (
