@@ -2,7 +2,7 @@ export const DATA = [
   {
     id: 1,
     name: "EasyCharge",
-    price: 29.99,
+    price: 45.99,
     productImg: "/Product.jpeg",
     productPay: "https://buy.stripe.com/00gbM6e9UdrYdpecMM",
     disabledd: false,
