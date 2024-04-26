@@ -28,7 +28,7 @@ function Produkte(props) {
         key={id}
         className="mx-auto rounded-lg object-cover w-full h-60 md:h-56 lg:h-64"
         src={productImg}
-        alt={`Picture: ${productImg}`}
+        alt={`${productImg}`}
       />
       <span className="justify-end flex">[1]</span>
 
